@@ -21,33 +21,6 @@ public class NumberUtil {
         return Double.parseDouble(ds);
     }
 
-//    public static double format2(double d) {
-//        return BigDecimalUtil.decimal(d, 2);
-//    }
-//
-//    public static String format2Str(double d) {
-//        DecimalFormat df = new DecimalFormat("#####0.00");
-//        return df.format(BigDecimalUtil.decimal(d, 2));
-//    }
-//
-//    public static String format3Str(double d) {
-//        DecimalFormat df = new DecimalFormat("#,##0.00");
-//        return df.format(BigDecimalUtil.decimal(d, 2));
-//    }
-//
-//    public static String format5Str(double d) {
-//
-//        DecimalFormat df = new DecimalFormat("0.00000");
-//        return df.format(BigDecimalUtil.decimal(d, 5));
-//    }
-//
-//    public static double format4(double d) {
-//        return BigDecimalUtil.decimal(d, 4);
-//    }
-//
-//    public static double format6(double d) {
-//        return BigDecimalUtil.decimal(d, 6);
-//    }
 
     public static int compare(double x, double y) {
         BigDecimal val1 = new BigDecimal(x);

@@ -24,22 +24,16 @@ public class StringUtil {
     /**
      * unicode 0x3000
      */
-    // public static final char SpaceCharB = ' ';
-    // public static final char SpaceCharB = (char)12288;
     public static final char SpaceCharB = (char) Integer.valueOf("3000", 16).intValue();
 
     /**
      * unicode 0xe525
      */
-    // public static final char SpaceCharC = '';
-    // public static final char SpaceCharC = (char)58661;
     public static final char SpaceCharC = (char) Integer.valueOf("e525", 16).intValue();
 
     /**
      * unicode 0xe5f1
      */
-    // public static final char SpaceCharD = '';
-    // public static final char SpaceCharD = (char)58865;
     public static final char SpaceCharD = (char) Integer.valueOf("e5f1", 16).intValue();
 
     /**
@@ -149,19 +143,6 @@ public class StringUtil {
         return isMatched;
     }
 
-//    /**
-//     * 判断邮箱是否有效
-//     *
-//     * @param str 邮箱
-//     * @return 检验结果（true：有效 false：无效）
-//     */
-//    public static boolean isMail(String str) {
-//        String mail = isNull(str);
-//        Pattern regex = Pattern.compile(Constants.Pattern.MAIL);
-//        Matcher matcher = regex.matcher(mail);
-//        boolean isMatched = matcher.matches();
-//        return isMatched;
-//    }
 
     /**
      * 是不是身份证号码
@@ -504,15 +485,6 @@ public class StringUtil {
         return false;
     }
 
-//    /**
-//     * 返回非null字符串
-//     *
-//     * @param str
-//     * @return
-//     */
-//    public static String getNotNullString(String str) {
-//        return StringUtil.isNotEmpty(str) ? str : StringUtil.EMPTY;
-//    }
 
     /**
      * 把字符串数组按分隔符转化成字符串
@@ -558,40 +530,6 @@ public class StringUtil {
         return result.substring(separator.length());
     }
 
-//    /**
-//     * 把List拼接成String 并且添加分隔符
-//     *
-//     * @param <T>
-//     * @param
-//     * @return
-//     */
-//    public static <T> String turnListToStr(List<T> list) {
-//        String result = StringUtil.EMPTY;
-//        if (CollectionUtils.isEmpty(list)) {
-//            return StringUtil.EMPTY;
-//        }
-//        for (T item : list) {
-//            result = result + item + COMMA;
-//        }
-//        return result.substring(0, result.length() - 1);
-//    }
-//
-//    public static boolean isNotBlank(String str) {
-//        return !StringUtil.isBlank(str);
-//    }
-//
-//    public static String dealWithInterestFreeRuleJson(String json) {
-//        if (StringUtil.isBlank(json)) {
-//            return StringUtil.EMPTY;
-//        }
-//        StringBuilder sb = new StringBuilder();
-//        JSONArray array = JSONObject.parseArray(json);
-//        for (int i = 0; i < array.size(); i++) {
-//            JSONObject obj = array.getJSONObject(i);
-//            sb.append(obj.get("nper")).append("期").append("(").append(obj.get("freeNper")).append(");");
-//        }
-//        return sb.toString();
-//    }
 
     /**
      * 产生对应位数的随机码,目前限制为数字(用户昵称使用)
