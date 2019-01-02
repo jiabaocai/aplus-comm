@@ -3,7 +3,7 @@ package com.ald.news.core.base;
 import com.ald.news.utils.Constants;
 
 /**
- * @author xdj
+ * @author cjb
  */
 public class BaseResponse<T> {
 
