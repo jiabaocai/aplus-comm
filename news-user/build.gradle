@@ -1,0 +1,9 @@
+allprojects {
+    group="com.ald.aplus"
+    version = '1.0-SNAPSHOT'
+}
+dependencies {
+    compile project(':core')
+    compile project(':utils')
+    compile project(':domain')
+}

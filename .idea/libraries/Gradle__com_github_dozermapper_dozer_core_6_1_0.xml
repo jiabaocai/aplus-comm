@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dozermapper:dozer-core:6.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/gradle-4.10.3/caches/modules-2/files-2.1/com.github.dozermapper/dozer-core/6.1.0/b6b6879e6bbb216dcb0f67d7a9ea60520687d30e/dozer-core-6.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/gradle-4.10.3/caches/modules-2/files-2.1/com.github.dozermapper/dozer-core/6.1.0/7c2eb6e89dba5368d8ee67e4f7b9bb6907585308/dozer-core-6.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

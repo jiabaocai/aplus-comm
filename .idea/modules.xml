@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" group="core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/news-user/news-user.iml" filepath="$PROJECT_DIR$/.idea/modules/news-user/news-user.iml" group="news-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/news-user/news-user_main.iml" filepath="$PROJECT_DIR$/.idea/modules/news-user/news-user_main.iml" group="news-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/news-user/news-user_test.iml" filepath="$PROJECT_DIR$/.idea/modules/news-user/news-user_test.iml" group="news-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quartz/quartz.iml" filepath="$PROJECT_DIR$/.idea/modules/quartz/quartz.iml" group="quartz" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quartz/quartz_main.iml" filepath="$PROJECT_DIR$/.idea/modules/quartz/quartz_main.iml" group="quartz" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quartz/quartz_test.iml" filepath="$PROJECT_DIR$/.idea/modules/quartz/quartz_test.iml" group="quartz" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils.iml" group="utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" group="utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" group="utils" />
+    </modules>
+  </component>
+</project>
