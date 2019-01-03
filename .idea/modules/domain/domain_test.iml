@@ -7,13 +7,17 @@
     <facet type="web" name="Web">
       <configuration>
         <webroots />
+        <sourceRoots />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output-test url="file://$MODULE_DIR$/../../../domain/out/test/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../domain/src/test" />
+    <content url="file://$MODULE_DIR$/../../../domain/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../domain/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../domain/src/test/resources" type="java-test-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="domain_main" />

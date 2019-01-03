@@ -15,6 +15,12 @@ public class Constants {
          */
         public static final String SPLIT = ",";
 
+
+        /**
+         * session用户实体键
+         */
+        public static final String SYSUSER = "SysUser";
+
         /**
          * 默认缓存区大小, 单位字节
          */
@@ -117,6 +123,10 @@ public class Constants {
          */
         public static final String USER_SAVE_FAIL = "保存失败";
         /**
+         * 本地登录用户默认昵称前缀
+         */
+        public static final String USER_NICKNAME_PREFIX = "edsnews";
+        /**
          * 本地登录用户默认昵称后缀数字位数
          */
         public static final int USER_NICKNAME_LENGTH = 6;
@@ -206,7 +216,32 @@ public class Constants {
         public static final String SMS_VERIFICATIONCODE = "verificationCode";
     }
 
-
+    /**
+     * 新闻状态
+     */
+    public static final class News {
+        /**
+         * 新闻状态-已收藏
+         */
+        public static final Byte NEWS_COLLECT_CONFIRM = 1;
+        /**
+         * 新闻状态-取消收藏
+         */
+        public static final Byte NEWS_COLLECT_CANCEL = 2;
+    }
+    /**
+     * 搜索接口
+     */
+    public static final class SearchConstans {
+        /**
+         * 搜索类型 1 标题搜索
+         */
+        public static final int SEARCH_TYPE_TITLE = 1;
+        /**
+         * 搜索类型 2 标签搜索
+         */
+        public static final int SEARCH_TYPE_LABEL = 2;
+    }
 
     /**
      * token方面设置
@@ -226,7 +261,7 @@ public class Constants {
         /**
          * token场景
          */
-        public static final String SUBJECT = "aplus";
+        public static final String SUBJECT = "aladin";
 
         /**
          * token中包含的用户编号
@@ -346,4 +381,69 @@ public class Constants {
          */
         public static final int SIGN_FAIL = 99;
     }
+
+    /**
+     * 新闻热度
+     */
+    public static final class Score{
+        /**
+         * 点赞
+         */
+        public static final String LIKE ="0";
+
+        /**
+         * 取消点赞
+         */
+        public static final String  CANCEL_LIKE="1";
+
+        /**
+         * 点赞分
+         */
+        public static final int LIKE_SCORE =500;
+
+        /**
+         * 收藏
+         */
+        public static final String COLLECTION ="2";
+
+        /**
+         * 取消收藏
+         */
+        public static final String CANCEL_COLLECTION ="3";
+
+        /**
+         * 收藏分
+         */
+        public static final int COLLECTION_SCORE =700;
+
+        /**
+         * 转发
+         */
+        public static final String FORWARD ="4";
+        /**
+         * 转发分
+         */
+        public static final int FORWARD_SCORE =1000;
+
+        /**
+         * 举报
+         */
+        public static final String REPORT ="5";
+
+        /**
+         * 举报分
+         */
+        public static final int REPORT_SCORE =500;
+
+        /**
+         * 屏蔽
+         */
+        public static final String SHIELD ="6";
+
+        /**
+         * 屏蔽分
+         */
+        public static final int SHIELD_SCORE =1000;
+    }
+
 }

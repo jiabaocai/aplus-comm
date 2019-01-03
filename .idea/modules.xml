@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty.iml" group="aplus-thirdparty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_main.iml" group="aplus-thirdparty" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_test.iml" group="aplus-thirdparty" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" group="core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" group="core" />

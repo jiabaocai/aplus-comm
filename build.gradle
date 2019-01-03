@@ -1,3 +1,9 @@
+//引入其他gradle文件
+//apply from: '../scripts/build-jacoco.gradle'
+apply from: './build-upload.gradle'
+//apply from: '../scripts/build-springboot.gradle'
+
+
 buildscript {
     ext {
         springBootVersion = '1.5.6.RELEASE'
@@ -32,14 +38,18 @@ subprojects {
     repositories {
         mavenLocal()
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "http://172.16.159.110:8081/repository/maven-releases/" }
         maven { url "http://repo2.maven.org/maven2" }
         maven { url "http://repo.maven.apache.org/maven2" }
         jcenter()
         mavenCentral()
+
+
     }
 
     dependencies {
         testCompile group: 'junit', name: 'junit', version: '4.12'
+
         testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
         compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}", {
         }

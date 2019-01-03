@@ -33,6 +33,7 @@ public class SwaggerConfig  extends WebMvcConfigurationSupport {
                 .select()
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.regex("/api/.*"))
+//                .apis(RequestHandlerSelectors.basePackage("com.ald.aplus.thirdparty.controller")) // 注意修改此处的包名
                 .build()
                 .globalOperationParameters(pars)
                 .apiInfo(apiInfo());

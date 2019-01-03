@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="aplus-thirdparty_main" target="1.8" />
+      <module name="aplus-thirdparty_test" target="1.8" />
+      <module name="aplus_main" target="1.8" />
+      <module name="aplus_test" target="1.8" />
       <module name="core_main" target="1.8" />
       <module name="core_test" target="1.8" />
       <module name="domain_main" target="1.8" />
