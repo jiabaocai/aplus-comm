@@ -1,57 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3102edc7-bd9d-4247-8f70-3dfd0997430f" name="Default Changelist" comment="修改各种工具类">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__yop8_yop8_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/ThirdpartyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/client/yop/YopClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/controller/YopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/resources/bootstrap-master.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aplus-thirdparty/src/main/resources/bootstrap-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/yop-java-sdk-3.1.3-jdk18.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/aplus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/aplus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/news-user/news-user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/news-user/news-user.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/news-user/news-user_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/news-user/news-user_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/quartz/quartz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/quartz/quartz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/quartz/quartz_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/quartz/quartz_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/quartz/quartz_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/quartz/quartz_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/utils/utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/utils/utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" afterDir="false" />
+    <list default="true" id="3102edc7-bd9d-4247-8f70-3dfd0997430f" name="Default Changelist" comment="新增第三方平台模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/ald/news/core/config/swagger/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/ald/news/core/config/swagger/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ald/news/core/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ald/news/core/config/swagger/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Encrypt.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Encrypt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Global.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Global.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$News.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$News.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Pattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Pattern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Redis.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Redis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$ResponseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$ResponseCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$SMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$SMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$SearchConstans.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$SearchConstans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$User.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/Constants$User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/java/NumberUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/java/NumberUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/java/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/utils/out/production/classes/com/ald/news/utils/java/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/ald/news/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/ald/news/utils/Constants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -182,7 +134,7 @@
         <counts>
           <entry key="class" value="6" />
           <entry key="ftl" value="6" />
-          <entry key="gradle" value="16" />
+          <entry key="gradle" value="18" />
           <entry key="java" value="61" />
           <entry key="md" value="2" />
           <entry key="properties" value="9" />
@@ -194,7 +146,7 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="FTL" value="6" />
-          <entry key="Groovy" value="16" />
+          <entry key="Groovy" value="18" />
           <entry key="JAVA" value="61" />
           <entry key="Markdown" value="2" />
           <entry key="Properties" value="9" />
@@ -204,18 +156,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="426" />
+          <entry key="gradle" value="437" />
           <entry key="java" value="541" />
           <entry key="properties" value="41" />
-          <entry key="txt" value="27" />
+          <entry key="txt" value="48" />
           <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="426" />
+          <entry key="Groovy" value="437" />
           <entry key="JAVA" value="541" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PLAIN_TEXT" value="48" />
           <entry key="Properties" value="41" />
           <entry key="YAML" value="13" />
         </counts>
@@ -224,14 +176,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/controller/YopController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="240">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aplus-thirdparty/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -241,6 +202,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -1648,11 +1618,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="17010997123000" />
+        <entry key="$PROJECT_DIR$" value="15464487637000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/aplus-thirdparty/build.gradle" value="1129873761" />
         <entry key="$PROJECT_DIR$/build-upload.gradle" value="4266388537" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="737986667" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1516740118" />
         <entry key="$PROJECT_DIR$/core/build.gradle" value="4065109562" />
         <entry key="$PROJECT_DIR$/domain/build.gradle" value="2690649405" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1114575256" />
@@ -1997,9 +1967,9 @@
         <option value="$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/client/yop/YopClientService.java" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/aplus-thirdparty/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/build-upload.gradle" />
         <option value="$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/controller/YopController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -2035,12 +2005,6 @@
               <item name="aplus-comm_20190101" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="aplus-thirdparty" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="aplus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aplus-comm_20190101" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="aplus-thirdparty" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -2059,7 +2023,7 @@
     <property name="SearchEverywhereHistoryKey" value="genera&#9;FILE&#9;file:///Users/caijiabao/IdeaProjects/news/aplus-comm_20190101/utils/src/main/java/com/ald/news/utils/generator&#10;gener&#9;FILE&#9;file:///Users/caijiabao/IdeaProjects/news/aplus-comm_20190101/.idea/libraries/Gradle__org_mybatis_generator_mybatis_generator_core_1_3_5.xml&#10;BaseRe&#9;FILE&#9;file:///Users/caijiabao/IdeaProjects/news/aplus-comm_20190101/core/src/main/java/com/ald/news/core/base/BaseResponse.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546509782201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546509892530" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2226,7 +2190,7 @@
       <updated>1546416883652</updated>
       <workItem from="1546416885027" duration="50000" />
       <workItem from="1546416947748" duration="6952000" />
-      <workItem from="1546426397831" duration="25109000" />
+      <workItem from="1546426397831" duration="25218000" />
     </task>
     <task id="LOCAL-00001" summary="修改公用返回结果">
       <created>1546427066242</created>
@@ -2242,11 +2206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546427282973</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增第三方平台模块">
+      <created>1546509830369</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546509830369</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32111000" />
+    <option name="totallyTimeSpent" value="32220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
@@ -2301,7 +2272,8 @@
     </ignored-roots>
     <MESSAGE value="修改公用返回结果" />
     <MESSAGE value="修改各种工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改各种工具类" />
+    <MESSAGE value="新增第三方平台模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增第三方平台模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2649,33 +2621,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aplus-thirdparty/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="72" column="63" lean-forward="true" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build-upload.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/aplus-thirdparty/src/main/java/com/ald/aplus/thirdparty/controller/YopController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="240">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aplus-thirdparty/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
         </state>
       </provider>
     </entry>
