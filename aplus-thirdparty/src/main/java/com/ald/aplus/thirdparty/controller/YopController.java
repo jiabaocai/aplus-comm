@@ -28,9 +28,9 @@ public class YopController extends BaseController {
 
     @ApiOperation(value = "代付单笔出款接口", notes = "代付单笔出款接口")
     @ResponseBody
-    @GetMapping(value = "/transfer_send")
+    @PostMapping(value = "/transfer_send")
     public BaseResponse getTransferSend(@RequestParam Map<String, Object> params) {
-        return yopClientService.transfer_send(params);
+        return yopClientService.yopApi(params,"paymentURI");
     }
 
 }
