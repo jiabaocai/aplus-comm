@@ -72,6 +72,8 @@ subprojects {
         compile "org.springframework.cloud:spring-cloud-starter-feign:${springCloudVersion}"
 
         compile 'net.coobird:thumbnailator:0.4.8'
+        //lombok插件，自动生成get set简化代码，idea需要自行安装插件
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
 
     }
 
