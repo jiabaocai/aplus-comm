@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aplus-channel" />
             <option value="$PROJECT_DIR$/aplus-thirdparty" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/domain" />
@@ -19,6 +20,18 @@
           </set>
         </option>
         <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/aplus-channel" />
+        <option name="gradleHome" value="$USER_HOME$/Downloads/gradle-4.10.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/aplus-channel" />
+            <option value="$PROJECT_DIR$/aplus-channel/channel-api" />
+            <option value="$PROJECT_DIR$/aplus-channel/channel-service" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="aplus-channel_main" target="1.8" />
+      <module name="aplus-channel_test" target="1.8" />
       <module name="aplus-thirdparty_main" target="1.8" />
       <module name="aplus-thirdparty_test" target="1.8" />
       <module name="aplus_main" target="1.8" />
       <module name="aplus_test" target="1.8" />
+      <module name="channel-api_main" target="1.8" />
+      <module name="channel-api_test" target="1.8" />
+      <module name="channel-service_main" target="1.8" />
+      <module name="channel-service_test" target="1.8" />
       <module name="core_main" target="1.8" />
       <module name="core_test" target="1.8" />
       <module name="domain_main" target="1.8" />
@@ -14,6 +20,12 @@
       <module name="news-user_test" target="1.8" />
       <module name="quartz_main" target="1.8" />
       <module name="quartz_test" target="1.8" />
+      <module name="test-test1_main" target="1.8" />
+      <module name="test-test1_test" target="1.8" />
+      <module name="test1_main" target="1.8" />
+      <module name="test1_test" target="1.8" />
+      <module name="test_main" target="1.8" />
+      <module name="test_test" target="1.8" />
       <module name="utils_main" target="1.8" />
       <module name="utils_test" target="1.8" />
     </bytecodeTargetLevel>

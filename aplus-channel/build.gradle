@@ -1,0 +1,13 @@
+allprojects {
+    group="com.ald.aplus"
+    version = '1.0-SNAPSHOT'
+}
+dependencies {
+//    compile project(':core')
+//    compile project(':utils')
+//    compile project(':domain')
+//
+//    //易宝支付的jar包
+//    testCompile group:'yop8',name:'yop8',version:'1.0.0'
+}
+

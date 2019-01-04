@@ -4,6 +4,7 @@ import com.ald.aplus.thirdparty.service.YopClientService;
 import com.ald.aplus.thirdparty.utils.YopClient;
 import com.ald.news.core.base.BaseController;
 import com.ald.news.core.base.BaseResponse;
+import com.ald.news.utils.java.EntityUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -56,7 +57,7 @@ public class YopClientComponent extends BaseController {
         params.put("desc", 1);
         params.put("leaveWord", 1);
         params.put("abstractInfo", 1);
-
+//        EntityUtils.mapToEntity(params,TransferSendRequest)
 
         String uri = YopClient.getUrl("paymentURI");
 
