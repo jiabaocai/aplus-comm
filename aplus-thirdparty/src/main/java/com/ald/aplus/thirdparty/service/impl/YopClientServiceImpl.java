@@ -19,7 +19,7 @@ import java.util.Map;
 @Service("yopClientService")
 public class YopClientServiceImpl extends BaseService implements YopClientService {
     @Override
-    public BaseResponse yopApi(Map<String, Object> params,String urlType) {
+    public BaseResponse yopApi(Map<String, Object> params, String urlType) {
         try {
             YopClient yopClient = new YopClient();
             String uri = YopClient.getUrl(urlType);
@@ -31,41 +31,6 @@ public class YopClientServiceImpl extends BaseService implements YopClientServic
 
     }
 
-//    @Override
-//    public BaseResponse transfer_batch_send(Map<String, Object> params) {
-//        try {
-//            YopClient yopClient = new YopClient();
-//            String uri = YopClient.getUrl("batchsendURI");
-//            Map<String, Object> yopresponsemap = yopClient.yeepayYOP(params, uri);
-//            return BaseResponse.newSuccessInstance(yopresponsemap);
-//        } catch (Exception e) {
-//            return BaseResponse.newFailInstance(401);
-//        }
-//    }
-//
-//    @Override
-//    public BaseResponse transfer_query(Map<String, Object> params) {
-//        try {
-//            YopClient yopClient = new YopClient();
-//            String uri = YopClient.getUrl("paymentqueryURI");
-//            Map<String, Object> yopresponsemap = yopClient.yeepayYOP(params, uri);
-//            return BaseResponse.newSuccessInstance(yopresponsemap);
-//        } catch (Exception e) {
-//            return BaseResponse.newFailInstance(401);
-//        }
-//    }
-//
-//    @Override
-//    public BaseResponse query_customer_amount(Map<String, Object> params) {
-//        try {
-//            YopClient yopClient = new YopClient();
-//            String uri = YopClient.getUrl("customeramountQueryURI");
-//            Map<String, Object> yopresponsemap = yopClient.yeepayYOP(params, uri);
-//            return BaseResponse.newSuccessInstance(yopresponsemap);
-//        } catch (Exception e) {
-//            return BaseResponse.newFailInstance(401);
-//        }
-//    }
 }
 
 

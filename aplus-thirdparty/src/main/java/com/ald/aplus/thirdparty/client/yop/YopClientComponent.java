@@ -6,6 +6,7 @@ import com.ald.news.core.base.BaseController;
 import com.ald.news.core.base.BaseResponse;
 import com.ald.news.domain.thirdparty.TransferSendRequest;
 import com.ald.news.utils.java.EntityUtils;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -22,6 +23,7 @@ import java.util.Map;
  * @CopyRight 本内容仅限于北境内部传阅，禁止外泄以及用于其他的商业目的
  **/
 @RestController
+@Api
 public class YopClientComponent extends BaseController {
     @Resource
     private YopClientService yopClientService;

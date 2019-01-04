@@ -2,10 +2,9 @@ package com.ald.news.user.mapper;
 
 import com.ald.news.core.base.BaseMapper;
 import com.ald.news.domain.user.UserDo;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
+import tk.mybatis.mapper.provider.base.BaseInsertProvider;
 
 import java.util.List;
 
@@ -20,4 +19,5 @@ public interface UserMapper extends BaseMapper<UserDo> {
             "</foreach>",
             "</script>"})
     List<UserDo> getUserByPrimarykey(@Param("replyUserIdList") List<Long> replyUserIdList);
+
 }
