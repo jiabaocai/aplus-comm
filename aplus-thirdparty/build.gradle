@@ -8,6 +8,6 @@ dependencies {
     compile project(':domain')
 
     //易宝支付的jar包
-    testCompile group:'yop8',name:'yop8',version:'1.0.0'
+    compile group:'yop8',name:'yop8',version:'1.0.0'
 }
 
