@@ -77,6 +77,20 @@ public class YopClientComponent extends BaseController {
         return yopClientService.yopApi(params, "customeramountQueryURI");
     }
 
+
+    /**
+     * 代付代发对账文件
+     *
+     * @param params
+     * @return
+     */
+    @GetMapping(value = "/rest/v1.0/balance/api_file")
+    @ResponseBody
+    BaseResponse apiFile(@RequestParam Map<String, String> params) {
+        return yopClientService.yopFile(params, "/");
+    }
+
+
     public static void main(String[] args) throws IOException {
         YopClient yopClient = new YopClient();
         Map<String, Object> params = new HashMap<>();

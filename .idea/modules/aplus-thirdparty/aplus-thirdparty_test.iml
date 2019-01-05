@@ -42,9 +42,10 @@
     <orderEntry type="module" module-name="core_main" />
     <orderEntry type="module" module-name="utils_main" />
     <orderEntry type="module" module-name="domain_main" />
+    <orderEntry type="library" name="Gradle: yop8:yop8:1.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: yos:yos:1.0" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: yop8:yop8:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-validator:5.3.5.Final" level="project" />

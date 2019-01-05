@@ -28,8 +28,21 @@ public class YopClientServiceImpl extends BaseService implements YopClientServic
         } catch (Exception e) {
             return BaseResponse.newFailInstance(401);
         }
+    }
+
+    @Override
+    public BaseResponse yopFile(Map<String, String> params, String path) {
+        try {
+            YopClient yopClient = new YopClient();
+            //获取对账文件
+            String filePath = yopClient.yosFile(params, path);
+            return BaseResponse.newSuccessInstance(filePath);
+        } catch (Exception e) {
+            return BaseResponse.newFailInstance(401);
+        }
 
     }
+
 
 }
 

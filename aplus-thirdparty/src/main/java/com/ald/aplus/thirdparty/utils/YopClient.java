@@ -6,8 +6,9 @@ import com.yeepay.g3.sdk.yop.client.YopClient3;
 import com.yeepay.g3.sdk.yop.client.YopRequest;
 import com.yeepay.g3.sdk.yop.client.YopResponse;
 import com.yeepay.g3.sdk.yop.error.YopSubError;
+import com.yeepay.g3.yop.sdk.api.StdApi;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -70,6 +71,51 @@ public class YopClient {
                 });
         System.out.println("将response转化为map格式之后: " + jsonMap);
         return jsonMap;
+    }
+
+
+    public static String yosFile(Map<String, String> params, String path) {
+        StdApi apidApi = new StdApi();
+        InputStream inputStream = null;
+        OutputStream outputStream = null;
+
+        String method = params.get("method");
+        String date = params.get("date");
+        String dataType = params.get("dataType");
+
+        String fileName = "";
+        String filePath = "";
+        try {
+
+            inputStream = apidApi.remitDayBillDownload(getMerchantNo(), date, dataType);
+            fileName = "remitday-" + dataType + "-" + date + ".csv";
+
+            filePath = path + File.separator + fileName;
+            System.out.println("filePath=====" + filePath);
+            outputStream = new FileOutputStream(new File(filePath));
+
+
+            byte[] bs = new byte[1024];
+            int readNum;
+            while ((readNum = inputStream.read(bs)) != -1) {
+                outputStream.write(bs, 0, readNum);
+            }
+        } catch (Exception e1) {
+            e1.printStackTrace();
+            return null;
+        } finally {
+            try {
+                outputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            try {
+                inputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return filePath;
     }
 
     public static String getUrl(String payType) {

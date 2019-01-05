@@ -14,6 +14,8 @@ import java.util.Map;
  **/
 public interface YopClientService {
     BaseResponse yopApi(Map<String, Object> params, String urlType);
+
+    BaseResponse yopFile(Map<String, String> params, String path);
 }
 
 

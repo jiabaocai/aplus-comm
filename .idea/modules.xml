@@ -3,18 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel.iml" group="aplus-channel" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel_main.iml" group="aplus-channel" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-channel/aplus-channel_test.iml" group="aplus-channel" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty.iml" group="aplus-thirdparty" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_main.iml" group="aplus-thirdparty" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-thirdparty/aplus-thirdparty_test.iml" group="aplus-thirdparty" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-api.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-api.iml" group="channel-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-api/channel-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-api/channel-api_main.iml" group="channel-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-api/channel-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-api/channel-api_test.iml" group="channel-api" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-service/channel-service.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-service/channel-service.iml" group="channel-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-service/channel-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-service/channel-service_main.iml" group="channel-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/channel-service/channel-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/channel-service/channel-service_test.iml" group="channel-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_main.iml" group="core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core_test.iml" group="core" />
