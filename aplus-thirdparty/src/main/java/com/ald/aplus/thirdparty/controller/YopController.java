@@ -3,8 +3,11 @@ package com.ald.aplus.thirdparty.controller;
 import com.ald.aplus.thirdparty.service.YopClientService;
 import com.ald.news.core.base.BaseController;
 import com.ald.news.core.base.BaseResponse;
+import com.ald.aplus.thirdparty.utils.RedisUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -25,12 +28,16 @@ public class YopController extends BaseController {
     @Resource
     private YopClientService yopClientService;
 
+    @Autowired
+    private RedisUtil redisUtil;
+
 
     @ApiOperation(value = "代付单笔出款接口", notes = "代付单笔出款接口")
     @ResponseBody
     @PostMapping(value = "/transfer_send")
-    public BaseResponse getTransferSend(@RequestParam Map<String, Object> params) {
-        return yopClientService.yopApi(params,"paymentURI");
+    public BaseResponse getTransferSend(@RequestParam Map<String, Object> params,String key,String name) {
+        redisUtil.append(key,name);
+        return BaseResponse.newSuccessInstance(redisUtil.get(key));
     }
 
 }

@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.*;
@@ -33,6 +34,8 @@ import java.util.Map;
 @RefreshScope
 @EnableTransactionManagement
 public class UserController extends BaseController {
+    @Autowired
+    protected RedisTemplate redisTemplate;
 
     @Autowired
     private UserService userService;
@@ -99,7 +102,9 @@ public class UserController extends BaseController {
     @GetMapping(value = "/a")
     @ApiOperation(value = "111", notes = "111")
     public BaseResponse aaa() {
-        return BaseResponse.newInstance(200,url);
+        redisTemplate.opsForValue().set("test","测试");
+        String result= (String) redisTemplate.opsForValue().get("test");
+        return BaseResponse.newSuccessInstance(result);
     }
 
     @RequestMapping("/processbuilder")

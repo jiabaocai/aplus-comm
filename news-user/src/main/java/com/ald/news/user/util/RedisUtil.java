@@ -2,6 +2,7 @@ package com.ald.news.user.util;
 
 import com.ald.news.utils.Constants;
 import com.ald.news.utils.java.DateUtil;
+import org.springframework.data.redis.core.RedisTemplate;
 import redis.clients.jedis.*;
 
 import java.util.Date;
