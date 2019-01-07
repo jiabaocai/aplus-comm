@@ -1,5 +1,6 @@
 package com.ald.aplus.thirdparty;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import com.didispace.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +19,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 @EnableEurekaClient
+@EnableApolloConfig
 public class ThirdpartyApplication{
     public static void main(String[] args) {
         //初始器和监听器在这一步添加完毕

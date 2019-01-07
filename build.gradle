@@ -46,8 +46,7 @@ subprojects {
         testCompile group: 'junit', name: 'junit', version: '4.12'
 
         testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
-        compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}", {
-        }
+
         compile "org.springframework.boot:spring-boot-configuration-processor:${springBootVersion}"
         compile "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
         compile "org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}"
@@ -74,6 +73,9 @@ subprojects {
         compile 'net.coobird:thumbnailator:0.4.8'
         //lombok插件，自动生成get set简化代码，idea需要自行安装插件
         compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
+        // https://mvnrepository.com/artifact/com.ctrip.framework.apollo/apollo-client
+        compile group: 'com.ctrip.framework.apollo', name: 'apollo-client', version: '1.2.0'
+
 
     }
 

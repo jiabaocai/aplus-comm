@@ -1,13 +1,15 @@
 package com.ald.aplus.thirdparty.controller;
 
 import com.ald.aplus.thirdparty.service.YopClientService;
+import com.ald.aplus.thirdparty.utils.RedisUtil;
 import com.ald.news.core.base.BaseController;
 import com.ald.news.core.base.BaseResponse;
-import com.ald.aplus.thirdparty.utils.RedisUtil;
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -23,19 +25,24 @@ import java.util.Map;
  **/
 @Api(tags = "易宝接口", value = "易宝接口")
 @RestController
-@RequestMapping("/v1/api")
+@RequestMapping("/aplus-thirdparty/")
 public class YopController extends BaseController {
     @Resource
     private YopClientService yopClientService;
+
+    @Value("${content}")
+    private String result;
 
     @Autowired
     private RedisUtil redisUtil;
 
 
+
+
     @ApiOperation(value = "代付单笔出款接口", notes = "代付单笔出款接口")
     @ResponseBody
-    @PostMapping(value = "/transfer_send")
-    public BaseResponse getTransferSend(@RequestParam Map<String, Object> params,String key,String name) {
+    @GetMapping(value = "/transfer_send")
+    public BaseResponse getTransferSend(Map<String, Object> params,String key,String name) {
         redisUtil.append(key,name);
         return BaseResponse.newSuccessInstance(redisUtil.get(key));
     }
