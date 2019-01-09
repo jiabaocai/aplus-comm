@@ -21,6 +21,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils.iml" group="utils" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_main.iml" group="utils" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/utils_test.iml" group="utils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" group="zipkin-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" group="zipkin-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" group="zipkin-server" />
     </modules>
   </component>
 </project>
