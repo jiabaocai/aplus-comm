@@ -1,0 +1,5 @@
+##连接apollo配置
+app:
+  id: xxl-job-client
+apollo:
+  meta: http://172.16.159.110:10000/
