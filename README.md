@@ -40,11 +40,4 @@ debt-web/src/main/resources/generatorConfig.xml
 [SFTP的连接工具](https://filezilla-project.org/)
 
 ## 相关地址
-[Jenkins](http://192.168.106.131:8080/)
-[Gitlab](http://192.168.106.117/)       
-[Confluence](http://192.168.106.116:8090/)
-测试服务器
-```bash
-$ ssh root@192.168.106.142
-# hik12345
 ```
