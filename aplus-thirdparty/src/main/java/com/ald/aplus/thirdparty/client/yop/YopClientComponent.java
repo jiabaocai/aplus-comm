@@ -91,6 +91,244 @@ public class YopClientComponent extends BaseController {
     }
 
 
+    /**
+     * 鉴权绑卡确认
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/auth/confirm")
+    @ResponseBody
+    BaseResponse paperorderAythConfirm(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authbindcardreqUri");
+    }
+
+    /**
+     * 统一鉴权绑卡请求
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/unified/auth/request")
+    @ResponseBody
+    BaseResponse paperorderUnifiedAuthRequest(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authbindcardreqUri");
+    }
+
+    /**
+     * 鉴权绑卡重发
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/auth/resend")
+    @ResponseBody
+    BaseResponse paperorderAuthResend(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authbindcardresendUri");
+    }
+
+    /**
+     * 鉴权列表查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/auth/bindcard/list")
+    @ResponseBody
+    BaseResponse paperorderAuthBindcatdList(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authListqueryUri");
+    }
+
+    /**
+     * 鉴权记录查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/auth/query")
+    @ResponseBody
+    BaseResponse paperorderAuthQuery(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authrecordqueryUri");
+    }
+
+    /**
+     * bin查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/temppay/bankcardrecord")
+    @ResponseBody
+    BaseResponse paperTemppayBankcardrecord(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "bankcardqueryUri");
+    }
+
+
+    /**
+     * 批量扣款查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/api/pay/batchtempcard/query")
+    @ResponseBody
+    BaseResponse paperorderApiPayBatchtempcatdQuery(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "batchpayqueryUri");
+    }
+
+    /**
+     * 批量扣款的url
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/api/pay/batchtempcard/order")
+    @ResponseBody
+    BaseResponse paperApiPayBatchtempcardOrder(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "batchpayUri");
+    }
+
+    /**
+     * 绑卡支付确认
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/pay/confirm")
+    @ResponseBody
+    BaseResponse paperorderPayConfirm(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "bindcardconfirmUri");
+    }
+
+    /**
+     * 绑卡支付重发
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/pay/resend")
+    @ResponseBody
+    BaseResponse paperorderPayResend(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "bindcardpayresendUri");
+    }
+
+    /**
+     * 绑卡支付查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/api/pay/query")
+    @ResponseBody
+    BaseResponse paperorderApiPayQuery(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "bindcardpayqueryUri");
+    }
+
+    /**
+     * 首次支付查询
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/firstpayorder/query")
+    @ResponseBody
+    BaseResponse paperorderFirstpayorderQuery(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "firstpayqueryUri");
+    }
+
+    /**
+     * 首次支付短验确认
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/firstpayorder/confirm")
+    @ResponseBody
+    BaseResponse paperorderFirstPayorderConfirm(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "firstpaysmsconfUri");
+    }
+
+    /**
+     * 首次支付短验重发
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/firstpayorder/resend")
+    @ResponseBody
+    BaseResponse paperorderFirstpayorderResend(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "firstpaysmsresendUri");
+    }
+
+    /**
+     * 对账
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/api/accountcheck")
+    @ResponseBody
+    BaseResponse paperorderApiAccountcheck(@RequestParam Map<String, String> params) {
+        String requestUri = null;
+        String authfileUri ="authfileUri";
+        String payfileUri = "payfileUri";
+        String refundfileUri = "refundfileUri";
+        String splitfileUri = "splitfileUri";
+        String orderType = String.valueOf(params.get("orderType"));
+        //针对选择的文件类型不同对应不同的地址
+        if (orderType.equals("pay")) {
+            requestUri = payfileUri;
+        } else if (orderType.equals("refund")) {
+            requestUri = refundfileUri;
+        } else if (orderType.equals("divide")) {
+            requestUri = splitfileUri;
+        } else if (orderType.equals("authentic")) {
+            requestUri = authfileUri;
+        }
+        return yopClientService.yopPayApi(params, requestUri);
+    }
+
+    /**
+     * 鉴权绑卡确认
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/auth/confirm")
+    @ResponseBody
+    BaseResponse paperorderAuthConfirm(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "authbindcardconfirmUri");
+    }
+
+    /**
+     * 统一绑卡支付请求
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/unified/pay")
+    @ResponseBody
+    BaseResponse paperorderUnifiedPay(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "unibindcardpayUri");
+    }
+
+
+    /**
+     * 统一首次支付请求
+     *
+     * @param params
+     * @throws IOException
+     */
+    @PostMapping(value = "/rest/v1.0/paperorder/unified/firstpay")
+    @ResponseBody
+    BaseResponse paperorderUnifiedFirstpay(@RequestParam Map<String, String> params) {
+        return yopClientService.yopPayApi(params, "unionfirstpayUri");
+    }
+
+
+
+
+
     public static void main(String[] args) throws IOException {
         YopClient yopClient = new YopClient();
         Map<String, Object> params = new HashMap<>();
@@ -113,10 +351,13 @@ public class YopClientComponent extends BaseController {
         params.put("desc", "1");
         params.put("leaveWord", "1");
         params.put("abstractInfo", "1");
+
+        params.put("customerNumber","11111111111");
         TransferSendRequest c = EntityUtils.mapToEntity(params, TransferSendRequest.class);
         System.out.println(c);
+
 //        String uri = YopClient.getUrl("paymentURI");
-//        Map<String, Object> yopresponsemap = yopClient.yeepayYOP(params, uri);
+//        Map<String, String> yopresponsemap = yopClient.yeepayYOP(params, uri);
 
 
 //		request.setAttribute("yopresponsemap",yopresponsemap==null?"系统异常":yopresponsemap);
