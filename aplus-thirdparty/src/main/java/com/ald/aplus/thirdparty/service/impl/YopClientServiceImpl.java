@@ -1,6 +1,8 @@
 package com.ald.aplus.thirdparty.service.impl;
 
+import com.ald.aplus.thirdparty.client.yop.YeepayService;
 import com.ald.aplus.thirdparty.service.YopClientService;
+import com.ald.aplus.thirdparty.utils.Config;
 import com.ald.aplus.thirdparty.utils.YopClient;
 import com.ald.news.core.base.BaseResponse;
 import com.ald.news.core.base.BaseService;
@@ -43,7 +45,18 @@ public class YopClientServiceImpl extends BaseService implements YopClientServic
 
     }
 
-
+    @Override
+    public BaseResponse yopPayApi(Map<String, String> params, String path) {
+        try {
+            String merchantno = Config.getInstance().getValue("merchantno");
+            params.put("merchantno", merchantno);
+            String uri = YopClient.getUrl(path);
+            Map<String, String> yopresponsemap = YeepayService.yeepayYOP(params, uri);
+            return BaseResponse.newSuccessInstance(yopresponsemap);
+        } catch (Exception e) {
+            return BaseResponse.newFailInstance(401);
+        }
+    }
 }
 
 
